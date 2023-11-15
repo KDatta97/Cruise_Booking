@@ -9,6 +9,10 @@ const CruiseSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  distance: {
+    type: String,
+    required: true,
+  },
   departurePort: {
     type: String,
     required: true,
@@ -23,14 +27,6 @@ const CruiseSchema = new mongoose.Schema({
   },
   arrivalDate: {
     type: Date, 
-    required: true,
-  },
-  deckClass: {
-    type: String,
-    required: true,
-  },
-  cabinClass: {
-    type: String,
     required: true,
   },
   photos: {
